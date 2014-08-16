@@ -4,17 +4,18 @@ apply plugin: 'java'
 
 apply from: 'dependencies.gradle'
 
-apply plugin: 'versions'
+apply plugin: 'com.github.ben-manes.versions'
 buildscript {
     repositories {
-        maven { url "https://github.com/ben-manes/gradle-versions-plugin/raw/mvnrepo" }
+        jcenter()
         maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
         maven { url 'http://repo.joist.ws' }
         maven { url 'http://bindgen-wicket.googlecode.com/svn/maven2' }
         mavenCentral()
     }
     dependencies {
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.5-beta-2'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.5-beta-6'
+	classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3.5'
     }
 }
 
@@ -42,6 +43,7 @@ dependencies {
 }
 
 repositories {
+    jcenter()
     maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
     maven { url 'http://repo.joist.ws' }
     maven { url 'http://bindgen-wicket.googlecode.com/svn/maven2' }

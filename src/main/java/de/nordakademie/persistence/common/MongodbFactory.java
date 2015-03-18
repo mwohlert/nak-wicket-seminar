@@ -3,22 +3,22 @@ package de.nordakademie.persistence.common;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Required;
 
-import com.mongodb.DB;
 import com.mongodb.MongoClient;
+import com.mongodb.client.MongoDatabase;
 
-public class MongodbFactory implements FactoryBean<DB> {
+public class MongodbFactory implements FactoryBean<MongoDatabase> {
 
     private MongoClient mongoClient;
     private String databaseName;
 
     @Override
-    public DB getObject() {
-        return mongoClient.getDB(databaseName);
+    public MongoDatabase getObject() {
+        return mongoClient.getDatabase(databaseName);
     }
 
     @Override
-    public Class<DB> getObjectType() {
-        return DB.class;
+    public Class<MongoDatabase> getObjectType() {
+        return MongoDatabase.class;
     }
 
     @Override

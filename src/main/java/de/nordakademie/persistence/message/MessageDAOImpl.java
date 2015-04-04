@@ -1,7 +1,6 @@
 package de.nordakademie.persistence.message;
 
-import static java.util.Arrays.asList;
-
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +18,6 @@ public class MessageDAOImpl implements MessageDAO {
 
     @Override
     public List<Message> findAll() {
-        return asList(new Message("helloWorld.title"));
+        return Collections.singletonList(new Message("helloWorld.title"));
     }
 }

@@ -12,8 +12,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.7'
-        classpath 'org.codehaus.groovy:groovy-backports-compat23:2.4.1'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.9'
+        classpath 'org.codehaus.groovy:groovy-backports-compat23:2.4.3'
     }
 }
 

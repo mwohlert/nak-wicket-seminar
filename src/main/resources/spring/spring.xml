@@ -12,7 +12,7 @@
     </bean>
     <bean id="mongodb" class="de.nordakademie.persistence.common.MongodbFactory">
         <property name="mongoClient" ref="mongoClient"/>
-        <property name="databaseName" value="cheesr"/>
+        <property name="databaseName" value="Wicket"/>
     </bean>
     <bean id="nakWicketSeminarApplication" class="de.nordakademie.ui.NakWicketSeminarApplication"/>
     <context:annotation-config/>

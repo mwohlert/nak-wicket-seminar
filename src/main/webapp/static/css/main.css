@@ -1,4 +1,156 @@
 body {
-    color: #ffffff;
-    background-color: #000000;
+    background-color: #FFF;
+    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+* {
+    outline: 0;
+}
+
+a {
+    color: #215E9E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding-top: 244px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
+
+.header {
+    background: #F5F5F5;
+    border-bottom: 1px solid #EEE;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: left;
+}
+
+.header p {
+    color: #777;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.menu, .menu li {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: #555;
+    border-bottom: 4px solid transparent;
+    display: block;
+    font-weight: bold;
+    padding: 10px 15px 15px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    background-color: #F5F5F5;
+    border-color: #215E9E;
+}
+
+#searchForm {
+    position: absolute;
+    bottom: -75px;
+    right: 0;
+}
+
+#searchForm input {
+    background: #FFF;
+    border: 1px solid #DDD;
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 225px;
+}
+
+/**
+ * FILTER
+ */
+
+.filter div {
+    float: left;
+    width: 130px;
+}
+
+.filter label {
+    display: block;
+    font-size: 13px;
+    padding: 5px 0 10px 0;
+}
+
+.filter:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/**
+ * PRODUCT VIEW
+ */
+
+.productView {
+    margin-top: 20px;
+}
+
+.product {
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    display: block;
+    padding: 5px;
+}
+
+.product:hover {
+    background-color: #EEE;
+}
+
+.product table {
+    width: 100%;
+}
+
+.product table tr td:not(:nth-child(1)) {text-align: right;}
+
+.product table tr td:nth-child(1) {
+    width: 30%;
+}
+
+.product table tr td:nth-child(2) {
+    width: 22%
+}
+
+.product table tr td:nth-child(3) {
+    width: 22%
+}
+
+.product table span {
+    background: #F5F5F5;
+    border: 1px solid #CCC;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
 }

@@ -6,7 +6,7 @@ import static org.mockito.Mockito.mock;
 
 import org.testng.annotations.Test;
 
-import de.nordakademie.business.message.MessageService;
+import de.nordakademie.business.message.ProductService;
 
 public class HomePageTest {
 
@@ -14,7 +14,7 @@ public class HomePageTest {
     public void shouldRenderHomePage() {
         // given
         final NakWicketSeminarWicketTester wicketTester = NakWicketSeminarWicketTester.builder()
-                .withMock(mock(MessageService.class)).build();
+                .withMock(mock(ProductService.class)).build();
 
         // when
         wicketTester.startPage(HomePage.class);

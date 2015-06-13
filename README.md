@@ -6,4 +6,4 @@ It features a searchbox and filters.
 The searchbox is realised with an AjaxOnChangeListener.
 
 ##LICENCE
-This Project is realeased under the MIT License. See attached copy: <a href="LICENCE.md">LICENSE.md</a>
+This Project is realeased under the MIT License. See attached copy: <a href="LICENSE.md">LICENSE.md</a>

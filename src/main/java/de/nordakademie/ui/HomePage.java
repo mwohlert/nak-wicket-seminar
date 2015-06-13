@@ -2,22 +2,18 @@ package de.nordakademie.ui;
 
 import de.nordakademie.business.message.Product;
 import de.nordakademie.business.message.SearchService;
-import de.nordakademie.persistence.common.MongodbFactory;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.OnChangeAjaxBehavior;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.DropDownChoice;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
-import org.apache.wicket.markup.html.list.ListItem;
-import org.apache.wicket.markup.html.list.ListView;
+
 import org.apache.wicket.model.AbstractReadOnlyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.spring.injection.annot.SpringBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.wicketstuff.annotation.mount.MountPath;
 
 import de.nordakademie.business.message.ProductService;
@@ -25,17 +21,18 @@ import de.nordakademie.business.message.ProductService;
 import java.util.Arrays;
 import java.util.List;
 
+
 @MountPath("home")
 public class HomePage extends WebPage {
 
     @SpringBean
     private ProductService productService;
 
+
     @SpringBean
     private SearchService searchService;
 
     public HomePage() {
-
         Model<String> colorModel = new Model<>();
         Model<String> psModel = new Model<>();
         IModel<String> model = new Model<>();
@@ -81,6 +78,7 @@ public class HomePage extends WebPage {
         form.add(searchBox);
         searchBox.add(new OnChangeAjaxBehavior() {
             @Override
+
             protected void onUpdate(AjaxRequestTarget target) {
                 target.add(productPanel);
             }

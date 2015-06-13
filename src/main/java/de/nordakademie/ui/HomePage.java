@@ -1,7 +1,7 @@
 package de.nordakademie.ui;
 
-import de.nordakademie.business.message.Product;
-import de.nordakademie.business.message.SearchService;
+import de.nordakademie.business.product.Product;
+import de.nordakademie.business.product.SearchService;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.OnChangeAjaxBehavior;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
@@ -16,7 +16,7 @@ import org.apache.wicket.model.Model;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.wicketstuff.annotation.mount.MountPath;
 
-import de.nordakademie.business.message.ProductService;
+import de.nordakademie.business.product.ProductService;
 
 import java.util.Arrays;
 import java.util.List;

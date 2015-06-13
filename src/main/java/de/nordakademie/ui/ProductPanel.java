@@ -1,6 +1,6 @@
 package de.nordakademie.ui;
 
-import de.nordakademie.business.message.Product;
+import de.nordakademie.business.product.Product;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;

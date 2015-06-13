@@ -1,4 +1,4 @@
-package de.nordakademie.business.message;
+package de.nordakademie.business.product;
 
 public class Product {
 

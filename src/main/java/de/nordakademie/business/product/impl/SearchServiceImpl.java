@@ -1,8 +1,8 @@
-package de.nordakademie.business.message.impl;
+package de.nordakademie.business.product.impl;
 
-import de.nordakademie.business.message.Product;
-import de.nordakademie.business.message.SearchDAO;
-import de.nordakademie.business.message.SearchService;
+import de.nordakademie.business.product.Product;
+import de.nordakademie.business.product.SearchDAO;
+import de.nordakademie.business.product.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

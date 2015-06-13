@@ -1,13 +1,13 @@
-package de.nordakademie.business.message.impl;
+package de.nordakademie.business.product.impl;
 
 import java.util.List;
 
-import de.nordakademie.business.message.Product;
-import de.nordakademie.business.message.ProductService;
+import de.nordakademie.business.product.Product;
+import de.nordakademie.business.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import de.nordakademie.business.message.ProductDAO;
+import de.nordakademie.business.product.ProductDAO;
 
 @Service
 public class ProductServiceImpl implements ProductService {

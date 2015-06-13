@@ -6,7 +6,7 @@ import static org.mockito.Mockito.mock;
 
 import org.testng.annotations.Test;
 
-import de.nordakademie.business.message.ProductService;
+import de.nordakademie.business.product.ProductService;
 
 
 public class HomePageTest {

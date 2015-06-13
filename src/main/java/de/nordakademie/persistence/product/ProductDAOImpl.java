@@ -1,7 +1,7 @@
-package de.nordakademie.persistence.message;
+package de.nordakademie.persistence.product;
 
-import de.nordakademie.business.message.Product;
-import de.nordakademie.business.message.ProductDAO;
+import de.nordakademie.business.product.Product;
+import de.nordakademie.business.product.ProductDAO;
 import de.nordakademie.persistence.common.MongodbFactory;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;

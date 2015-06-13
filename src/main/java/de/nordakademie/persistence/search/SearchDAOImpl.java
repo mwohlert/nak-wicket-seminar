@@ -1,7 +1,7 @@
 package de.nordakademie.persistence.search;
 
-import de.nordakademie.business.message.Product;
-import de.nordakademie.business.message.SearchDAO;
+import de.nordakademie.business.product.Product;
+import de.nordakademie.business.product.SearchDAO;
 import de.nordakademie.persistence.common.MongodbFactory;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
